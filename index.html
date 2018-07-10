@@ -12,7 +12,7 @@
 <body>
   <div class="container grid">
     <header>
-      <nav>
+      <nav role="navigation">
         <h1><a href="/">Restaurant Reviews</a></h1>
       </nav>
     </header>
@@ -25,16 +25,16 @@
         <div class="row">
           <div class="filter-options">
             <h2>Filter Results</h2>
-            <select id="neighborhoods-select" tabindex="1" name="neighborhoods" onchange="updateRestaurants()">
+            <select id="neighborhoods-select" tabindex="1" role="listbox" name="neighborhoods" onchange="updateRestaurants()">
               <option value="all">All Neighborhoods</option>
             </select>
-            <select id="cuisines-select" tabindex="1" name="cuisines" onchange="updateRestaurants()">
+            <select id="cuisines-select" tabindex="1" role="listbox" name="cuisines" onchange="updateRestaurants()">
               <option value="all">All Cuisines</option>
             </select>
           </div>
         </div>
         <div class="row">
-          <ul id="restaurants-list"></ul>
+          <ul id="restaurants-list" role="list"></ul>
         </div>
       </section>
     </main>
