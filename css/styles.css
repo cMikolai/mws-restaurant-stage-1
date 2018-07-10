@@ -210,7 +210,7 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 100%;
+  max-width: 100%;
 }
 #restaurant-name {
   color: #f18200;
@@ -349,15 +349,40 @@ nav h1 a {
 
 /* ====================== Mobile Restaurant Reviews ====================== */
 @media screen and (max-width: 500px) {
-	#restaurant-container, #reviews-container, #main-content {
+	.filter-options h2 {
+		line-height: 40px;
+	}
+	.filter-options select {
+		margin: 10px;
+	}
+ 	#reviews-container, #main-content {
 		width: 100%;
 		padding-top: 20px;
 	}
 	.inside #map-container {
 	  height: 50vh;
 	  position: relative;
-	  top: 0;
+	  top: 50px;
 	  width: 100%;
+	}
+	#restaurant-container {
+		margin-top: 70px;
+		padding: 0 20px;
+		width: 80%;
+	}
+	#reviews-container {
+		padding: 0;
+	}
+	#reviews-list {
+		width: 100%;
+	}
+	.inside header,
+	#restaurant-container,
+	.inside #footer {
+		max-width: 100%;
+	}
+	#breadcrumb {
+		width: 100%;
 	}
 }
 
